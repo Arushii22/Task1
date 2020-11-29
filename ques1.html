@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Days Left</title>
+  <style media="screen">
+  body{
+      background-color: #e4e4e4;
+  }
+  h1{
+    color: #4ECCA3;
+  }
+
+  </style>
+
+
+</head>
+
+<body>
+  <h1>Javascript program to calculate number of days left until next christmas.</h1>
+  <script type="text/javascript">
+  function daysLeft() {
+    var today = new Date();
+    var christmas = new Date(today.getFullYear(), 11, 25);
+    var oneDay = 1000 * 60 * 60 * 24;
+    var result = Math.ceil((christmas.getTime() - today.getTime()) / (oneDay));
+    document.write(result + " Are the total number of days left till christmas");
+  }
+  daysLeft();
+
+
+  </script>
+</body>
+
+
+</html>
